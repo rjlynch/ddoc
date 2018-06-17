@@ -37,7 +37,7 @@ where they were called from, and what they returned.
 ```ruby
   ...
   # spec/ddoc_spec.rb
-  SomeClass.new.instance_method_with_args(7)
+  expect(SomeClass.new.instance_method_with_args(7)).to eq [7] #=> true
   ...
 ```
 
