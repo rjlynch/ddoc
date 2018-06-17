@@ -1,6 +1,6 @@
 # Ddoc
 
-Generate dynamic documentation *WIP* - Still very much work in progress.
+Generate dynamic documentation *WIP* - Still very much work in progress.  
 Documents your methods as you run your code.
 
 ## Installation
