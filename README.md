@@ -55,8 +55,8 @@ Pass a second parameter to specify a different output file.
 TODO:
 
 [ ] - Test with Rails  
-[ ] - Add better spec coverage
-[ ] - Expand array types in documentation
+[ ] - Add better spec coverage  
+[ ] - Expand array types in documentation  
 [ ] - Add more info to the default document generator
 
 ## Development
