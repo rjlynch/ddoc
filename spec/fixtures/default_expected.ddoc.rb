@@ -16,6 +16,7 @@ class TestClass < IgnoredSuperClass
 
   # DDOC 2018-06-17
   # @return [String] Example "class_method return value"
+  # @caller [/Users/richardlynch/Development/ddoc/ddoc/spec/ddoc_spec.rb:22:in `block (3 levels) in <top (required)>']
   def self.class_method
     return "class_method return value"
   end
@@ -31,6 +32,7 @@ class TestClass < IgnoredSuperClass
   # DDOC 2018-06-17
   # @param  [String] ivar Example "foo"
   # @return [String] Example "foo"
+  # @caller [/Users/richardlynch/Development/ddoc/ddoc/spec/ddoc_spec.rb:23:in `new']
   def initialize(ivar)
     @ivar = ivar
   end
@@ -43,6 +45,7 @@ class TestClass < IgnoredSuperClass
   # DDOC 2018-06-17
   # @param  [Integer] args Example 7
   # @return [Array] Example [7]
+  # @caller [/Users/richardlynch/Development/ddoc/ddoc/spec/ddoc_spec.rb:23:in `block (3 levels) in <top (required)>']
   def instance_method_with_args(*args)
     return *args
   end
@@ -53,3 +56,4 @@ class TestClass < IgnoredSuperClass
 
   Ddoc.document! self, File.dirname(__FILE__) + '/default_result.ddoc.rb'
 end
+

@@ -16,22 +16,27 @@ module Ddoc
     def to_s
       [
         "# DDOC #{Date.today}",
-        formated_params,
-        formated_return
+        formatted_params,
+        formatted_return,
+        formatted_caller
       ].compact.join("\n")
     end
 
     private
 
-    def formated_params
+    def formatted_params
       out = params.zip(args).map do |(type, name), arg|
         "# @param  [#{arg.class}] #{name} Example #{arg.inspect}"
       end.join("\n")
       out.empty? ? nil : out
     end
 
-    def formated_return
+    def formatted_return
       "# @return [#{value.class}] Example #{value.inspect}"
+    end
+
+    def formatted_caller
+      "# @caller [#{calls.first}]"
     end
   end
 end
