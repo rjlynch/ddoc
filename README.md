@@ -35,7 +35,7 @@ Pass a second parameter to specify a different output file.
 
 TODO:
 
-[ ] - Test with Rails
+[ ] - Test with Rails  
 [ ] - Add better spec coverage
 
 ## Development
