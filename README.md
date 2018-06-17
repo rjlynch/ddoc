@@ -39,7 +39,7 @@ class SormClass
   # DDOC 2018-06-17
   # @param  [Integer] args Example 7
   # @return [Array] Example [7]
-  # @caller [/Users/richardlynch/Development/ddoc/ddoc/spec/ddoc_spec.rb:23:in `block (3 levels) in <top (required)>']
+  # @caller [/Users/richardlynch/Development/ddoc/spec/ddoc_spec.rb:23:in `block (3 levels) in <top (required)>']
   def instance_method_with_args(*args)
     return *args
   end
