@@ -35,7 +35,14 @@ end
 Ddoc will add comments to files noting what arguments methods are called with,
 where they were called from, and what they returned.
 ```ruby
-class SormClass
+  ...
+  # spec/ddoc_spec.rb
+  SomeClass.new.instance_method_with_args(7)
+  ...
+```
+
+```ruby
+class SomeClass
   # DDOC 2018-06-17
   # @param  [Integer] args Example 7
   # @return [Array] Example [7]
