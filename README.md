@@ -1,6 +1,6 @@
 # Ddoc
 
-Generate dynaminc documentation *WIP* - Still needs work!!
+Generate dynamic documentation *WIP* - Still very much work in progress.
 
 ## Installation
 
