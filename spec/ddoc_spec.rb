@@ -23,6 +23,10 @@ describe Ddoc do
       TestClass.new('foo').instance_method_with_args(7)
     end
 
+    it "doesn't break return values" do
+      expect(TestClass.new('foo').instance_method_with_args(7)).to eq [7]
+    end
+
     it 'generates correct documentation' do
       expect(result).to eq expected
     end
