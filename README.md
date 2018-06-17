@@ -25,12 +25,28 @@ Add `Ddoc.document! self` to the _bottom_ of the class you want to document,
 just before the closing end.
 ```ruby
 class SomeClass
-  ...
+  def instance_method_with_args(*args)
+    return *args
+  end
+
   Ddoc.document! self
 end
 ```
 Ddoc will add comments to files noting what arguments methods are called with,
 where they were called from, and what they returned.
+```ruby
+class SormClass
+  # DDOC 2018-06-17
+  # @param  [Integer] args Example 7
+  # @return [Array] Example [7]
+  # @caller [/Users/richardlynch/Development/ddoc/ddoc/spec/ddoc_spec.rb:23:in `block (3 levels) in <top (required)>']
+  def instance_method_with_args(*args)
+    return *args
+  end
+
+  Ddoc.document! self
+end
+```
 
 Ddoc.document! defaults to adding documentation to the file it's called in. 
 Pass a second parameter to specify a different output file.
@@ -40,6 +56,7 @@ TODO:
 
 [ ] - Test with Rails  
 [ ] - Add better spec coverage
+[ ] - Expand array types in documentation
 [ ] - Add more info to the default document generator
 
 ## Development
