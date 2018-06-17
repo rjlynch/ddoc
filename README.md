@@ -1,6 +1,7 @@
 # Ddoc
 
 Generate dynamic documentation *WIP* - Still very much work in progress.
+Documents your methods as you run your code.
 
 ## Installation
 
@@ -28,6 +29,8 @@ class SomeClass
   Ddoc.document! self
 end
 ```
+Ddoc will add comments to files noting what arguments methods are called with,
+where they were called from, and what they returned.
 
 Ddoc.document! defaults to adding documentation to the file it's called in. 
 Pass a second parameter to specify a different output file.
@@ -37,6 +40,7 @@ TODO:
 
 [ ] - Test with Rails  
 [ ] - Add better spec coverage
+[ ] - Add more info to the default document generator
 
 ## Development
 
