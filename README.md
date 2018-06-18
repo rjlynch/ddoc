@@ -5,10 +5,10 @@ Documents your methods as you run your code.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile:  
 `gem 'ddoc', git: 'git@github.com:rjlynch/ddoc.git'`
 
-Then require ddoc
+Then require ddoc  
 `require 'ddoc'`
 
 ## Usage
