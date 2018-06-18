@@ -6,18 +6,10 @@ Documents your methods as you run your code.
 ## Installation
 
 Add this line to your application's Gemfile:
+`gem 'ddoc', git: 'git@github.com:rjlynch/ddoc.git'`
 
-```ruby
-gem 'ddoc'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ddoc
+Then require ddoc
+`require 'ddoc'`
 
 ## Usage
 
